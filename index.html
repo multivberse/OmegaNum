@@ -21,8 +21,13 @@
           doTheThing();
           output2.innerHTML=eval(OmegaNum.hyper(inputs[0])(inputs[1],inputs[2]));
         }
-        function doTheThing(){	
+          function loopInput2() {
+          var inputs = [input2a.value, input2b.value, input2c.value, input2d.value, input2e.value]
           document.getElementById("input2b").value=parseFloat(document.getElementById("input2b").value)+parseFloat(document.getElementById("input2d").value);
+          doTheThing();
+          output2.innerHTML=eval(OmegaNum.hyper(inputs[0])(inputs[1],inputs[2]));
+        }
+        function doTheThing(){	
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
     </script>
