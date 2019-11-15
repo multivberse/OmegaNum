@@ -32,7 +32,9 @@
           runInput2()
           var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
-      document.getElementById("buttonStop").onclick= clearInterval(myTimer); // this isn't working and it's making me angry
+      document.getElementById("buttonStop").onclick= function (){
+        clearInterval(myTimer);
+      }
     </script>
     <style>
       * {
