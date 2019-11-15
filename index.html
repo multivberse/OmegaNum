@@ -26,7 +26,7 @@
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
       document.getElementById("button3").onclick=function (){
-        var myTimer = setInterval(runInput2, input2e.value)
+        var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
       document.getElementById("button4").onclick=clearInterval(myTimer)
     </script>
