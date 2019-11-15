@@ -15,17 +15,17 @@
       }
     </script>
     <script>
-        document.getElementById("button2").onclick=doTheThing(){ // oh my god why will this not work
+        document.getElementById("button2").onclick=runInput2(){
         function runInput2() {  
-          output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value);
+          output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value).toString();
           button2.innerHTML="RUN"
         }
         function doTheThing(){	
           input2b.innerHTML="input2b.value" + "input2d.value"
           output2.innerHTML=document.getElementById("input2");
           runInput2()
-        }
-        }
+        } 
+        }  // oh my god why will this not work
     </script>
     <style>
       * {
