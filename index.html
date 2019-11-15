@@ -27,9 +27,9 @@
         }  // oh my god why will this not work
     </script>
     <script>
-      var myTimer = 0
-      document.getElementById("button3").onclick=function beginLoop(){
-        myTimer = setInterval(runInput2, document.getElementById("input2e").value)
+      document.getElementById("button3").onclick=beginLoop(){
+        function beginLoop() {
+        var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
       document.getElementById("button4").onclick=clearInterval(myTimer)
     </script>
