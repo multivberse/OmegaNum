@@ -12,7 +12,10 @@
           else q=OmegaNum(e);	
           document.getElementById("output").innerHTML=q+"<br>"+q.toNumber()+"<br>"+JSON.stringify(q.array);	
         }	
-        document.getElementById("button2").onclick=setInterval(doTheThing, document.getElementById("input2e"))
+        document.getElementById("button2").onclick=myTimer()
+        function myTimer() {  
+          setInterval(doTheThing, document.getElementById("input2e"))
+        }
         function doTheThing(){	
           document.getElementById("input2b").innerHTML=eval(document.getElementById("input2b")+document.getElementById("input2d"))
           document.getElementById("output2").innerHTML=eval(document.getElementById("input2").value);	
