@@ -12,7 +12,9 @@
           else q=OmegaNum(e);	
           document.getElementById("output").innerHTML=q+"<br>"+q.toNumber()+"<br>"+JSON.stringify(q.array);	
         }	
-        document.getElementById("button2").onclick=function (){	
+        document.getElementById("button2").onclick=setInterval(doTheThing, document.getElementById("input2e"))
+        function doTheThing(){	
+          document.getElementById("input2b").innerHTML=eval(document.getElementById("input2b")+document.getElementById("input2d"))
           document.getElementById("output2").innerHTML=eval(document.getElementById("input2").value);	
         }
       };
@@ -108,6 +110,9 @@
       String or Array to big number<br>
       <input type="text" id="input" value="10" style="width:95%;height:40px;"><button id="button">Run</button>
       <div id="output">Output here</div><br>
+      Input parameters<br>
+      <input type="text" id="input2a" value="4" style="width:15%;height:30px;"><input type="text" id="input2b" value="1.4" style="width:15%;height:30px;"><input type="text" id="input2c" value="3" style="width:15%;height:30px;"><input type="text" id="input2d" value="0.001" style="width:15%;height:30px;"><input type="text" id="input2e" value="100" style="width:15%;height:30px;">
+      <br>
       Arbiturarly code execution();<br>
       <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(4)(3,3)</textarea>
       <br>
