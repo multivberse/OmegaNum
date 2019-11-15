@@ -27,10 +27,11 @@
         } 
     </script>
     <script>
+      var myTimer = "";
       document.getElementById("buttonA").onclick=beginLoop()
         function beginLoop() {
           runInput2()
-          var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
+          myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
       document.getElementById("buttonStop").onclick= function (){
         clearInterval(myTimer);
