@@ -25,7 +25,9 @@
         function doTheThing(){	
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
-      document.getElementById("button3").onclick=function (){
+    </script>
+    <script>
+      document.getElementById("button3").onclick=function beginLoop(){
         var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
       document.getElementById("button4").onclick=clearInterval(myTimer)
@@ -131,7 +133,7 @@
       <br>
       <button id="button2" onclick="runInput2()">Run</button>
       <br>
-      <button id="button3">Auto</button>
+      <button id="button3" onclick="beginLoop()">Auto</button>
       <br>
       <button id="button4" onclick="clearInterval(myTimer)">Stop</button>
       <div id="output2">Output(eval()) here</div><br>
