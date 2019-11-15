@@ -24,14 +24,15 @@
         }
         function doTheThing(){	
           document.getElementById("output2").innerHTML=document.getElementById("input2");
-        }  // oh my god why will this not work
+        } 
     </script>
     <script>
-      document.getElementById("button3").onclick=beginLoop()
+      document.getElementById("buttonA").onclick=beginLoop()
         function beginLoop() {
+          runInput2()
           var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
-      document.getElementById("button4").onclick=clearInterval(myTimer);
+      document.getElementById("buttonS").onclick=clearInterval(myTimer); // this isn't working and it's making me angry
     </script>
     <style>
       * {
@@ -127,16 +128,16 @@
     </p>
     <p>
       Input parameters<br>
-      <input type="number" id="input2a" value="4" step="1" placeholder="Hyperoperator" style="width:15%;height:30px;"><input type="number" id="input2b" value="2" step="0.1" placeholder="Base 1" style="width:15%;height:30px;"><input type="number" id="input2c" value="3" step="1" placeholder="Base 2" style="width:15%;height:30px;"><input type="number" id="input2d" value="0.001" step="0.001" placeholder="Increment" style="width:15%;height:30px;"><input type="number" id="input2e" value="100" step="10" placeholder="Auto delay" style="width:15%;height:30px;">
+      <input type="number" id="input2a" value="4" step="1" placeholder="Hyperoperator" style="width:15%;height:30px;"><input type="number" id="input2b" value="2" step="0.1" placeholder="Base 1" style="width:15%;height:30px;"><input type="number" id="input2c" value="3" step="1" placeholder="Base 2" style="width:15%;height:30px;"><input type="number" id="input2d" value="0.001" step="0.001" placeholder="Auto increment" style="width:15%;height:30px;"><input type="number" id="input2e" value="100" step="10" placeholder="Auto delay" style="width:15%;height:30px;">
       <br>
       Arbiturarly code execution();<br>
       <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(inputs[0])(inputs[1],inputs[2])</textarea>
       <br>
       <button id="button2" onclick="runInput2()">Run</button>
       <br>
-      <button id="button3" onclick="beginLoop()">Auto</button>
+      <button id="buttonA" onclick="beginLoop()">Auto</button>
       <br>
-      <button id="button4" onclick="clearInterval(myTimer)">Stop</button>
+      <button id="buttonS">Stop</button>
       <div id="output2">Output(eval()) here</div><br>
     </p>
   </body>
