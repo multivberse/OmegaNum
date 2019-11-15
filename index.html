@@ -17,13 +17,13 @@
     <script>
         document.getElementById("button2").onclick=runInput2(){
         function runInput2() {  
+          doTheThing();
           output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value).toString();
           button2.innerHTML="RUN"
         }
         function doTheThing(){	
-          input2b.innerHTML="input2b.value" + "input2d.value"
+          input2b.innerHTML="2";
           output2.innerHTML=document.getElementById("input2");
-          runInput2()
         } 
         }  // oh my god why will this not work
     </script>
