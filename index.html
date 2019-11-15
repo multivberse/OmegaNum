@@ -20,10 +20,9 @@
           var inputs = [input2a.value, input2b.value, input2c.value, input2d.value, input2e.value]
           doTheThing();
           output2.innerHTML=eval(OmegaNum.hyper(inputs[0])(inputs[1],inputs[2]));
-          button2.innerHTML="RUN"
         }
         function doTheThing(){	
-          input2b.value="2";
+          document.getElementById("input2b").value="2";
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
     </script>
