@@ -32,7 +32,7 @@
           runInput2()
           var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
-      document.getElementById("buttonS").onclick=clearInterval(myTimer); // this isn't working and it's making me angry
+      document.getElementById("buttonStop").onclick= clearInterval(myTimer); // this isn't working and it's making me angry
     </script>
     <style>
       * {
@@ -137,7 +137,7 @@
       <br>
       <button id="buttonA" onclick="beginLoop()">Auto</button>
       <br>
-      <button id="buttonS">Stop</button>
+      <button id="buttonStop" onclick="clearInterval(myTimer)">Stop</button>
       <div id="output2">Output(eval()) here</div><br>
     </p>
   </body>
