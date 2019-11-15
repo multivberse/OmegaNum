@@ -27,11 +27,11 @@
         }  // oh my god why will this not work
     </script>
     <script>
-      document.getElementById("button3").onclick=beginLoop(){
+      document.getElementById("button3").onclick=beginLoop()
         function beginLoop() {
         var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
-      document.getElementById("button4").onclick=clearInterval(myTimer)
+      document.getElementById("button4").onclick=clearInterval(myTimer);
     </script>
     <style>
       * {
@@ -127,7 +127,7 @@
     </p>
     <p>
       Input parameters<br>
-      <input type="number" id="input2a" value="4" step="1" placeholder="Hyperoperator" style="width:15%;height:30px;"><input type="number" id="input2b" value="1.4" step="0.1" placeholder="Base" style="width:15%;height:30px;"><input type="number" id="input2c" value="3" step="1" placeholder="Repeats" style="width:15%;height:30px;"><input type="number" id="input2d" value="0.001" step="0.001" placeholder="Increment" style="width:15%;height:30px;"><input type="number" id="input2e" value="100" step="10" placeholder="Auto delay" style="width:15%;height:30px;">
+      <input type="number" id="input2a" value="4" step="1" placeholder="Hyperoperator" style="width:15%;height:30px;"><input type="number" id="input2b" value="2" step="0.1" placeholder="Base" style="width:15%;height:30px;"><input type="number" id="input2c" value="3" step="1" placeholder="Repeats" style="width:15%;height:30px;"><input type="number" id="input2d" value="0.001" step="0.001" placeholder="Increment" style="width:15%;height:30px;"><input type="number" id="input2e" value="100" step="10" placeholder="Auto delay" style="width:15%;height:30px;">
       <br>
       Arbiturarly code execution();<br>
       <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(4)(3,3)</textarea>
