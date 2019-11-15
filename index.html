@@ -26,6 +26,11 @@
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
     </script>
+    <script>
+      var myTimer = 0
+      function beginLoop() {
+        myTimer = setInterval(runInput2, document.getElementById("input2e").value)
+    </script>
     <style>
       * {
         font-family:monospace;
@@ -125,7 +130,7 @@
       Arbiturarly code execution();<br>
       <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(4)(3,3)</textarea>
       <br>
-      <button id="button2" onclick="runInput2()">Run</button>
+      <button id="button2" onclick="runInput2()">Run</button><button id="button3" onclick="beginLoop()">Auto</button><button id="button4" onclick="clearInterval(myTimer)">Stop</button>
       <div id="output2">Output(eval()) here</div><br>
     </p>
   </body>
