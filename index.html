@@ -15,11 +15,12 @@
       }
         document.getElementById("button2").onclick=doTheThing()
         function runInput2() {  
-          document.getElementById("output2").innerHTML=eval(OmegaNum.hyper(document.getElementById("input2a"))(document.getElementById("input2b"),document.getElementById("input2c")).value);
+          output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value);
         }
         function doTheThing(){	
-          document.getElementById("input2b").innerHTML=eval(document.getElementById("input2b")+document.getElementById("input2d"))
-          document.getElementById("output2").innerHTML=document.getElementById("input2");	
+          input2b.innerHTML=input2b.value + input2d.value
+          output2.innerHTML=document.getElementById("input2");
+          runInput2()
         }
     </script>
     <style>
