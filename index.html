@@ -19,10 +19,10 @@
         function runInput2() {  
           var inputs = [input2a.value, input2b.value, input2c.value, input2d.value, input2e.value]
           doTheThing();
+          document.getElementById("input2b").value=parseFloat(document.getElementById("input2b").value)+parseFloat(document.getElementById("input2d").value);
           output2.innerHTML=eval(OmegaNum.hyper(inputs[0])(inputs[1],inputs[2]));
         }
         function doTheThing(){	
-          document.getElementById("input2b").value=parseFloat(document.getElementById("input2b").value)+parseFloat(document.getElementById("input2d").value);
           document.getElementById("output2").innerHTML=document.getElementById("input2");
         }  // oh my god why will this not work
     </script>
