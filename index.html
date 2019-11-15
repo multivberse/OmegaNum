@@ -29,10 +29,11 @@
     <script>
       document.getElementById("button3").onclick=beginLoop()
         function beginLoop() {
-        var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
+          var myTimer = setInterval(runInput2, document.getElementById("input2e").value)
       }
-      document.getElementById("button4").onclick=function (){
-        clearInterval(myTimer);
+      document.getElementById("button4").onclick=endLoop()
+        function endLoop()
+          clearInterval(myTimer);
       }
     </script>
     <style>
