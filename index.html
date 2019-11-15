@@ -18,6 +18,7 @@
         document.getElementById("button2").onclick=doTheThing(){ // oh my god why will this not work
         function runInput2() {  
           output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value);
+          button2.innerHTML="RUN"
         }
         function doTheThing(){	
           input2b.innerHTML="input2b.value" + "input2d.value"
@@ -125,7 +126,7 @@
       Arbiturarly code execution();<br>
       <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(4)(3,3)</textarea>
       <br>
-      <button id="button2" onclick="doTheThing()">Run</button>
+      <button id="button2">Run</button>
       <div id="output2">Output(eval()) here</div><br>
     </p>
   </body>
