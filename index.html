@@ -17,7 +17,7 @@
     <script>
         document.getElementById("button2").onclick=doTheThing(){ // oh my god why will this not work
         function runInput2() {  
-          input2b.innerHTML=OmegaNum.add(input2b.value,input2d.value)
+          input2b.innerHTML=OmegaNum.add(document.getElementById("input2b").value,document.getElementById("input2d").value)
           output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value);
         }
         function doTheThing(){	
