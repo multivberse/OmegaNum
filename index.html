@@ -12,6 +12,7 @@
           else q=OmegaNum(e);	
           document.getElementById("output").innerHTML=q+"<br>"+q.toNumber()+"<br>"+JSON.stringify(q.array);	
         }	
+      }
         document.getElementById("button2").onclick=runInput2()
         function runInput2() {  
           document.getElementById("output2").innerHTML="eval(OmegaNum.hyper(document.getElementById(\"input2a\"))(document.getElementById(\"input2b\"),document.getElementById(\"input2c\")).value)";
