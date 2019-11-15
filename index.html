@@ -13,7 +13,9 @@
           document.getElementById("output").innerHTML=q+"<br>"+q.toNumber()+"<br>"+JSON.stringify(q.array);	
         }	
       }
-        document.getElementById("button2").onclick=doTheThing()
+    </script>
+    <script>
+        document.getElementById("button2").onclick=doTheThing(){ // oh my god why will this not work
         function runInput2() {  
           output2.innerHTML=OmegaNum.hyper(input2a.value)(input2b.value,input2c.value);
         }
@@ -21,6 +23,7 @@
           input2b.innerHTML=input2b.value + input2d.value
           output2.innerHTML=document.getElementById("input2");
           runInput2()
+        }
         }
     </script>
     <style>
