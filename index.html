@@ -14,7 +14,7 @@
         }	
         document.getElementById("button2").onclick=runInput2()
         function runInput2() {  
-          document.getElementById("output2").innerHTML=OmegaNum.hyper(document.getElementById("input2a"))(document.getElementById("input2b"),document.getElementById("input2c")).value;
+          document.getElementById("output2").innerHTML=eval(OmegaNum.hyper(document.getElementById("input2a"))(document.getElementById("input2b"),document.getElementById("input2c")).value);
         }
         function doTheThing(){	
           document.getElementById("input2b").innerHTML=eval(document.getElementById("input2b")+document.getElementById("input2d"))
