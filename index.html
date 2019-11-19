@@ -19,7 +19,6 @@
         function runInput2() {  
           var inputs = [input2a.value, input2b.value, input2c.value, input2d.value, input2e.value]
           doTheThing();
-          document.getElementById("input2b").value=parseFloat(document.getElementById("input2b").value)+parseFloat(document.getElementById("input2d").value);
           output2.innerHTML=eval(input2.value);
         }
         function doTheThing(){	
@@ -134,7 +133,7 @@
       <input type="number" id="input2a" value="4" step="1" placeholder="Hyperoperator" style="width:15%;height:30px;"><input type="number" id="input2b" value="2" step="0.1" placeholder="Base 1" style="width:15%;height:30px;"><input type="number" id="input2c" value="3" step="1" placeholder="Base 2" style="width:15%;height:30px;"><input type="number" id="input2d" value="0.001" step="0.001" placeholder="Auto increment" style="width:15%;height:30px;"><input type="number" id="input2e" value="100" step="10" placeholder="Auto delay" style="width:15%;height:30px;">
       <br>
       Arbiturarly code execution();<br>
-      <textarea name="input2" id="input2" style="width:95%;height:100px;">OmegaNum.hyper(inputs[0])(inputs[1],inputs[2])</textarea>
+      <textarea name="input2" id="input2" style="width:95%;height:100px;">input2b.value=Number(input2b.value)+Number(input2d.value)<br>OmegaNum.hyper(inputs[0])(inputs[1],inputs[2])</textarea>
       <br>
       <button id="button2" onclick="runInput2()">Run</button>
       <br>
